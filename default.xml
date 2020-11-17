@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote  name="github"
+           fetch="git://github.com/"
+           revision="refs/heads/master"
+           sync-j="8" />
+
+
+<remote  name="caf"
+           fetch="https://source.codeaurora.org/quic/la/"
+           sync-j="8" />
+
+
+<!-- get from github -->
+
+
+<!-- get from caf -->
+<default remote="caf" revision="partner-android/q-fs-release"/>
+<project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="093e614b8f9a428365107473966faa4794d5ec15" upstream="refs/heads/uefi.lnx.2.0.r6-rel"/>
+
+</manifest>
