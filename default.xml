@@ -13,7 +13,7 @@
 
 
 <!-- get from github -->
-<project name="abhayadevs/test_android_build_make" path="android/build/make" revision="main" remote="github"/>
+<project name="abhayadevs/test_android_build_make" path="abhay/android/build/make" revision="main" remote="github"/>
 
 <!-- get from caf -->
 <default remote="caf" revision="partner-android/q-fs-release"/>
