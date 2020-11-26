@@ -3,7 +3,7 @@
 
 <remote  name="github"
            fetch="git://github.com/"
-           revision="refs/heads/master"
+           revision="refs/heads/main"
            sync-j="8" />
 
 
