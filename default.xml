@@ -11,12 +11,25 @@
            fetch="https://source.codeaurora.org/quic/la/"
            sync-j="8" />
 
+  <remote  name="aosp"
+           fetch=".."
+           review="https://android-review.googlesource.com/" />
 
 <!-- get from github -->
 <project name="abhayadevs/test_android_build_make" path="abhay/android/build/make" revision="main" remote="github"/>
 
 <!-- get from caf -->
 <default remote="caf" revision="partner-android/q-fs-release"/>
-<project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="093e614b8f9a428365107473966faa4794d5ec15" upstream="refs/heads/uefi.lnx.2.0.r6-rel"/>
+<!--<project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="093e614b8f9a428365107473966faa4794d5ec15" upstream="refs/heads/uefi.lnx.2.0.r6-rel"/>-->
+
+<project path="build/make" name="platform/build" groups="pdk" >
+<copyfile src="core/root.mk" dest="Makefile" />
+<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+<linkfile src="core" dest="build/core" />
+<linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+<linkfile src="target" dest="build/target" />
+<linkfile src="tools" dest="build/tools" />
+</project>
 
 </manifest>
