@@ -12,7 +12,7 @@
            sync-j="8" />
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
 
 		<!-- get from github -->
